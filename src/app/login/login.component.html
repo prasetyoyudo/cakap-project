@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6 justify-content-center">
+            <img src="../../assets/octocat.png" class="img-fluid w-50 image-logo" alt="">
+            <form 
+            [formGroup]="loginForm"
+            >
+                <div class="form-group mt-3">
+                    <input 
+                        class           ="form-control"
+                        type            ="text"
+                        size            ="16"
+                        formControlName ="username"
+                        placeholder="input username">
+                </div>
+            </form>
+            <button class="btn btn-primary text-center" (click)="submitLogin(loginForm.value)">Submit</button>
+        </div>
+        <div class="col-lg-3"></div>
+    </div>
+</div>

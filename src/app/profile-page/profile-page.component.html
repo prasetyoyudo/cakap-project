@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row mb-3">
+        <div class="col-lg-4"></div>
+        <div class="col-lg-4">
+            <h1 class="text-center">Github Profile</h1>
+        </div>
+        <div class="col-lg-4"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4 mt-5">
+            <img src="{{userData?.avatar_url}}" class="img-fluid w-75 image-logo" alt="">
+            <h4 class="mt-4 mb-4 text-center"> {{userData?.login}}</h4>
+            <button class="btn btn-secondary  button-profile" (click)="goToMyRepo()"> My Repository </button>
+            <br>
+            <button class="btn btn-secondary mt-3 button-back" (click)="backToLogin()"> Back </button>
+        </div>
+        <div class="col-lg-8 mt-5 pl-5">
+            <h4>Full Name : {{userData?.name}}</h4>
+            <h4>Bio : {{userData?.bio}}</h4>
+            <h4>Company : {{userData?.company}}</h4>
+            <h4>Email : {{userData?.email}}</h4>
+            <h4>Followers : {{userData?.followers}}</h4>
+            <h4>Location : {{userData?.location}}</h4>
+            <h4>Public Repos : {{userData?.public_repos}}</h4>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+img.image-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button.button-back {
+    margin-left: 15rem;
+}
+
+button.button-profile {
+    margin-left: 13rem;
+}
